@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-light-primary elevation-1">
   <!-- Brand Logo -->
   <a href="./" class="brand-link text-center">
-    <img src="dist/img/Si_Eng_H_Color.jpg" width="100%">
+    <img src="<?php echo base_url('dist/img/Si_Eng_H_Color.jpg') ?>" width="100%">
 
     <span class="brand-text  font-weight-bold"></span>
 
@@ -16,10 +16,8 @@
       </div>
       <div class="info ">
         <a href="#" class="d-block text-start m-0 p-0">
-
           <b class="text-dark">ธนพล กัลปพฤกษ์</b><br>
-          <small>พนักงานบริหารงานทั่วไป</small>
-
+          <small>เจ้าหน้าที่บริหารงานทั่วไป</small>
         </a>
       </div>
     </div>
@@ -41,8 +39,8 @@
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-        <li class="nav-item menu-open">
-          <a href="<?php echo site_url('Dashboard') ?>" class="nav-link active">
+        <li class="nav-item">
+          <a href="<?php echo site_url('Dashboard') ?>" class="nav-link ">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
               Dashboard

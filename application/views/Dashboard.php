@@ -1,31 +1,27 @@
 <body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
 
-    <!-- Preloader -->
-    <div class="preloader flex-column justify-content-center align-items-center">
-      <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-    </div>
-    <!-- Preloader -->
+   
 
     <div class="content-wrapper">
       <div class="col-12 mx-auto p-sm-3">
         <div class="row m-0 p-0 ">
           <div class="col-6">
-            <button class="my-3 btn btn w-100 card p-4 bg-primary">
+            <a href="<?php echo base_url("Form") ?>" class="my-3 btn btn w-100 card p-4 bg-primary">
               <h5>เพิ่มเอกสาร</h5>
-            </button>
+            </a>
           </div>
           <div class="col-6">
-            <button class="my-3 btn btn w-100 card p-4 bg-warning">
+            <a href="<?php echo base_url("Timeline") ?>" class="my-3 btn btn w-100 card p-4 bg-warning">
               <h5>ตรวจสอบสถานะ</h5>
-            </button>
+            </a>
           </div>
         </div>
         <div class="row m-0 p-0">
           <div class="col-12 col-sm-4">
             <div class="small-box bg-light shadow-sm">
               <div class="inner">
-                <h3>150</h3>
+                <h3><?php echo ($countReq) ?></h3>
 
                 <p>รายการร้องขอทั้งหมด</p>
               </div>
@@ -37,28 +33,27 @@
             </div>
           </div>
           <div class="col-12 col-sm-4">
-            <div class="small-box bg-light shadow-sm">
+            <div class="small-box bg-danger shadow-sm">
               <div class="inner">
-                <h3>150</h3>
-
-                <p>รายการร้องขอทั้งหมด</p>
+                <h3><?php echo ($countFail) ?></h3>
+                <p>รายการที่ไม่ผ่าน</p>
               </div>
               <div class="icon">
-                <i class="fas fa-file-import"></i>
+                <i class="fas fa-ban"></i>
 
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <div class="col-12 col-sm-4">
-            <div class="small-box bg-light shadow-sm">
+            <div class="small-box bg-success shadow-sm">
               <div class="inner">
-                <h3>150</h3>
+                <h3><?php echo ($countPass) ?></h3>
 
-                <p>รายการร้องขอทั้งหมด</p>
+                <p>รายการที่ผ่าน</p>
               </div>
               <div class="icon">
-                <i class="fas fa-file-import"></i>
+                <i class="fas fa-check-circle"></i>
 
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>

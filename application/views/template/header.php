@@ -10,7 +10,10 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="<?php echo base_url('plugins/fontawesome-free/css/all.min.css'); ?>">
     <!-- Ionicons -->
+
+
     <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="<?php echo base_url('plugins/bootstrap-datepicker-thai/css/datepicker.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css'); ?>">
     <!-- iCheck -->
     <link rel="stylesheet" href="<?php echo base_url('plugins/icheck-bootstrap/icheck-bootstrap.min.css'); ?>">
@@ -24,4 +27,9 @@
     <link rel="stylesheet" href="<?php echo base_url('plugins/daterangepicker/daterangepicker.css'); ?>">
     <!-- summernote -->
     <link rel="stylesheet" href="<?php echo base_url('plugins/summernote/summernote-bs4.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') ?>" />
+    <link rel="stylesheet" href="<?php echo base_url('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') ?>" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 </head>

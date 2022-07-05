@@ -27,7 +27,13 @@
                 </form>
             </div>
         </li>
-
-        <!-- Messages Dropdown Menu -->
     </ul>
 </nav>
+
+
+<script>
+    $('.nav .nav-link').click(function() {
+        $('.nav  .nav-link').removeClass('active');
+        $(this).addClass('active');
+    })
+</script>
